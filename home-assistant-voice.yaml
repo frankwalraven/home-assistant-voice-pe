@@ -1,5 +1,5 @@
 substitutions:
-  # Phases of the Voice Assistant
+  # Phases of the Voice Assistant CACHE_TEST_20260729_2235
   # The voice assistant is ready to be triggered by a wake word
   voice_assist_idle_phase_id: '1'
   # The voice assistant is waiting for a voice command (after being triggered by the wake word)
