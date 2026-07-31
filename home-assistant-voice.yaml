@@ -1725,8 +1725,8 @@ micro_wake_word:
       id: hey_mycroft
     - model: https://raw.githubusercontent.com/frankwalraven/home-assistant-wakewords/main/hey_casa.json
       id: hey_casa
-    - model: https://raw.githubusercontent.com/frankwalraven/home-assistant-wakewords/main/hallo_wallie.json
-      id: hallo_wallie    
+    - model: https://raw.githubusercontent.com/frankwalraven/home-assistant-wakewords/main/beste_wallie.json
+      id: beste_wallie    
     - model: https://github.com/kahrendt/microWakeWord/releases/download/stop/stop.json
       id: stop
       internal: true
@@ -1795,15 +1795,15 @@ select:
         if (x == "Slightly sensitive") {
           id(hey_mycroft).set_probability_cutoff(253);
           id(hey_casa).set_probability_cutoff(204);
-          id(hallo_wallie).set_probability_cutoff(210);
+          id(beste_wallie).set_probability_cutoff(210);
         } else if (x == "Moderately sensitive") {
           id(hey_mycroft).set_probability_cutoff(242);
           id(hey_casa).set_probability_cutoff(166);
-          id(hallo_wallie).set_probability_cutoff(164);
+          id(beste_wallie).set_probability_cutoff(164);
         } else if (x == "Very sensitive") {
           id(hey_mycroft).set_probability_cutoff(237);
           id(hey_casa).set_probability_cutoff(128);
-          id(hallo_wallie).set_probability_cutoff(128);
+          id(beste_wallie).set_probability_cutoff(128);
         }
 
 voice_assistant:
