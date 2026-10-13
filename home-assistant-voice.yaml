@@ -1729,8 +1729,8 @@ micro_wake_word:
   models:
     - model: https://raw.githubusercontent.com/frankwalraven/home-assistant-wakewords/main/beste_knollie.json
       id: beste_knollie
-    - model: https://raw.githubusercontent.com/frankwalraven/home-assistant-wakewords/main/beste_wallie.json
-      id: beste_wallie    
+    - model: https://raw.githubusercontent.com/frankwalraven/home-assistant-wakewords/main/beste_.json
+      id: beste_    
     - model: https://github.com/kahrendt/microWakeWord/releases/download/stop/stop.json
       id: stop
       internal: true
@@ -1798,13 +1798,13 @@ select:
       lambda: |-
         if (x == "Slightly sensitive") {
           id(beste_knollie).set_probability_cutoff(210);
-          id(beste_wallie).set_probability_cutoff(210);
+          id(beste_wallie).set_probability_cutoff(230);
         } else if (x == "Moderately sensitive") {
           id(beste_knollie).set_probability_cutoff(164);
-          id(beste_wallie).set_probability_cutoff(164);
+          id(beste_wallie).set_probability_cutoff(205);
         } else if (x == "Very sensitive") {
           id(beste_knollie).set_probability_cutoff(128);
-          id(beste_wallie).set_probability_cutoff(128);
+          id(beste_wallie).set_probability_cutoff(170);
         }
 
 voice_assistant:
