@@ -1798,13 +1798,13 @@ select:
       lambda: |-
         if (x == "Slightly sensitive") {
           id(beste_knollie).set_probability_cutoff(210);
-          id(beste_wallie).set_probability_cutoff(230);
+          id(beste_wallie).set_probability_cutoff(215);
         } else if (x == "Moderately sensitive") {
           id(beste_knollie).set_probability_cutoff(164);
-          id(beste_wallie).set_probability_cutoff(205);
+          id(beste_wallie).set_probability_cutoff(210);
         } else if (x == "Very sensitive") {
           id(beste_knollie).set_probability_cutoff(128);
-          id(beste_wallie).set_probability_cutoff(170);
+          id(beste_wallie).set_probability_cutoff(200);
         }
 
 voice_assistant:
