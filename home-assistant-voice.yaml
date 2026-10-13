@@ -1729,8 +1729,8 @@ micro_wake_word:
   models:
     - model: https://raw.githubusercontent.com/frankwalraven/home-assistant-wakewords/main/beste_knollie.json
       id: beste_knollie
-    - model: https://raw.githubusercontent.com/frankwalraven/home-assistant-wakewords/main/beste_.json
-      id: beste_    
+    - model: https://raw.githubusercontent.com/frankwalraven/home-assistant-wakewords/main/beste_wallie.json
+      id: beste_wallie    
     - model: https://github.com/kahrendt/microWakeWord/releases/download/stop/stop.json
       id: stop
       internal: true
